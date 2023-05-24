@@ -1,3 +1,5 @@
+import 'dart:html';
+
 import 'package:flutter/material.dart';
 import 'package:fluttercomponentes/models/models.dart';
 import 'package:fluttercomponentes/screens/screens.dart';
@@ -7,10 +9,23 @@ class AppRoutes {
 
   static final menuOption = <MenuOption>[
     MenuOption(
-        icon: Icons.remove,
-        name: "ListView tipo 1",
-        route: "listview1",
-        screen: ListView1Screen())
+      icon: Icons.remove,
+      name: "ListView tipo 1",
+      route: "listview1",
+      screen: ListView1Screen(),
+    ),
+    MenuOption(
+      icon: Icons.remove,
+      name: "ListView tipo 2",
+      route: "listview2",
+      screen: ListView2Screen(),
+    ),
+    MenuOption(
+      icon: Icons.remove,
+      name: "TabBar y TabView",
+      route: "TabBar",
+      screen: TabScreen(),
+    )
   ];
 
   static Map<String, Widget Function(BuildContext)> getAppRoutes() {

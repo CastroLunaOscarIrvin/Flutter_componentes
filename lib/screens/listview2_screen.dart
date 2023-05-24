@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class ListView1Screen extends StatelessWidget {
+class ListView2Screen extends StatelessWidget {
   var juegos = ["Pou", "Fortnai", "Pacman", "Mortalcombat"];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text('List View tipo 1'),
+          title: Text('List View tipo 2'),
         ),
         body: ListView(
           children: [
