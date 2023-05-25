@@ -11,7 +11,7 @@ class AppTheme {
         const FloatingActionButtonThemeData(backgroundColor: primary),
   );
 
-  static final ThemeData darkTheme = ThemeData.light().copyWith(
+  static final ThemeData darkTheme = ThemeData.dark().copyWith(
       primaryColor: Colors.indigo,
       appBarTheme: const AppBarTheme(color: primary),
       scaffoldBackgroundColor: Color(0xff2f2f2f));

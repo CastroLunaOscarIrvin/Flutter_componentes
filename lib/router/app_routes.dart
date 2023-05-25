@@ -25,6 +25,18 @@ class AppRoutes {
       name: "TabBar y TabView",
       route: "TabBar",
       screen: TabScreen(),
+    ),
+    MenuOption(
+      icon: Icons.remove,
+      name: "Button Screen",
+      route: "ButtonScreen",
+      screen: ButtonScreen(),
+    ),
+    MenuOption(
+      icon: Icons.remove,
+      name: "TextField",
+      route: "TextFieldScreen",
+      screen: TextFieldScreen(),
     )
   ];
 
