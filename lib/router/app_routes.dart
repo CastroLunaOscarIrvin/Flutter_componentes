@@ -37,6 +37,12 @@ class AppRoutes {
       name: "TextField",
       route: "TextFieldScreen",
       screen: TextFieldScreen(),
+    ),
+    MenuOption(
+      icon: Icons.remove,
+      name: "AlertDialog",
+      route: "AlertDialog Screen",
+      screen: AlertDialogScreen(),
     )
   ];
 

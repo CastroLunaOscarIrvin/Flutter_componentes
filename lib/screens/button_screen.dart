@@ -24,23 +24,38 @@ class _ButtonScreenState extends State<ButtonScreen> {
         ),
         body: TabBarView(
           children: <Widget>[
-            Center(
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  TextButton(
+            ListView(
+              physics: const AlwaysScrollableScrollPhysics(),
+              padding: const EdgeInsets.all(10),
+              children: <Widget>[
+                Container(
+                  margin: const EdgeInsets.all(10),
+                  color: Color(0xffa2a7a9),
+                  child: TextButton(
+                    child: Text("Boton Texto"),
+                    onPressed: () {},
+                  ),
+                ),
+                Container(
+                  margin: const EdgeInsets.all(10),
+                  color: Color(0xffa2a7a9),
+                  child: ElevatedButton(
                     child: Text("Button"),
                     onPressed: () {},
                   ),
-                  ElevatedButton(
+                ),
+                Container(
+                  margin: const EdgeInsets.all(10),
+                  color: Color(0xffa2a7a9),
+                  child: OutlinedButton(
                     child: Text("Button"),
                     onPressed: () {},
                   ),
-                  OutlinedButton(
-                    child: Text("Button"),
-                    onPressed: () {},
-                  ),
-                  FloatingActionButton(
+                ),
+                Container(
+                  margin: const EdgeInsets.all(10),
+                  color: Color(0xffa2a7a9),
+                  child: FloatingActionButton(
                     child: Icon(Icons.save),
                     backgroundColor: Colors.deepPurple,
                     foregroundColor: Colors.white,
@@ -48,11 +63,19 @@ class _ButtonScreenState extends State<ButtonScreen> {
                       setState(() {});
                     },
                   ),
-                  IconButton(
+                ),
+                Container(
+                  margin: const EdgeInsets.all(10),
+                  color: Color(0xffa2a7a9),
+                  child: IconButton(
                     icon: Icon(Icons.play_arrow),
                     onPressed: () {},
                   ),
-                  DropdownButton(
+                ),
+                Container(
+                  margin: const EdgeInsets.all(10),
+                  color: Color(0xffa2a7a9),
+                  child: DropdownButton(
                       value: _value,
                       items: [
                         DropdownMenuItem(
@@ -70,7 +93,11 @@ class _ButtonScreenState extends State<ButtonScreen> {
                         });
                       },
                       hint: Text("Select item")),
-                  PopupMenuButton(
+                ),
+                Container(
+                  margin: const EdgeInsets.all(10),
+                  color: Color(0xffa2a7a9),
+                  child: PopupMenuButton(
                       itemBuilder: (context) => [
                             PopupMenuItem(
                               child: Text("First"),
@@ -81,7 +108,11 @@ class _ButtonScreenState extends State<ButtonScreen> {
                               value: 2,
                             )
                           ]),
-                  ButtonBar(
+                ),
+                Container(
+                  margin: const EdgeInsets.all(10),
+                  color: Color(0xffa2a7a9),
+                  child: ButtonBar(
                     children: [
                       TextButton(
                         child: Text("Yes"),
@@ -93,15 +124,17 @@ class _ButtonScreenState extends State<ButtonScreen> {
                       ),
                     ],
                   ),
-                ],
-              ),
+                ),
+              ],
             ),
             Center(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Image.asset("assets/button.jpeg"),
-                  Text("Codigo"),
+                  Text(
+                    "Codigo",
+                  ),
                 ],
               ),
             )
