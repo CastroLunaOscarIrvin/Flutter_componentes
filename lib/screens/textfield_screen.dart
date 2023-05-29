@@ -18,7 +18,7 @@ class _TextFieldScreenState extends State<TextFieldScreen> {
               Tab(text: "Codigo", icon: Icon(Icons.code)),
             ],
           ),
-          title: Text('Flutter TabBar'),
+          title: Text('Flutter TextField'),
         ),
         body: TabBarView(
           children: <Widget>[

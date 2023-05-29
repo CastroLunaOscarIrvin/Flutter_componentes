@@ -22,7 +22,7 @@ class _AlertDialogScreen extends State<AlertDialogScreen> {
               Tab(text: "Codigo", icon: Icon(Icons.code)),
             ],
           ),
-          title: Text('Flutter TabBar'),
+          title: Text('Flutter AlertDialog'),
         ),
         body: TabBarView(
           children: <Widget>[
@@ -46,7 +46,7 @@ class _AlertDialogScreen extends State<AlertDialogScreen> {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Image.asset("assets/button.jpeg"),
+                  Image.asset("assets/alertdialog.jpeg"),
                   Text(
                     "Codigo",
                   ),
@@ -56,6 +56,40 @@ class _AlertDialogScreen extends State<AlertDialogScreen> {
           ],
         ),
       ),
+    );
+  }
+
+  _showDialog(BuildContext context) {
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return Expanded(
+          child: AlertDialog(
+            title: Text('Welcome'),
+            content: Text('Do you wanna learn flutter?'),
+            actions: [
+              TextButton(
+                onPressed: () {
+                  Navigator.of(context).pop();
+                },
+                child: Text(
+                  'YES',
+                  style: TextStyle(color: Colors.black),
+                ),
+              ),
+              TextButton(
+                onPressed: () {
+                  Navigator.of(context).pop();
+                },
+                child: Text(
+                  'NO',
+                  style: TextStyle(color: Colors.black),
+                ),
+              ),
+            ],
+          ),
+        );
+      },
     );
   }
 }

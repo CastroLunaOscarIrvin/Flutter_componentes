@@ -43,7 +43,25 @@ class AppRoutes {
       name: "AlertDialog",
       route: "AlertDialog Screen",
       screen: AlertDialogScreen(),
-    )
+    ),
+    MenuOption(
+      icon: Icons.remove,
+      name: "Card",
+      route: "Card Screen",
+      screen: CardScreen(),
+    ),
+    MenuOption(
+      icon: Icons.remove,
+      name: "GridView",
+      route: "GridView",
+      screen: GridViewScreen(),
+    ),
+    MenuOption(
+      icon: Icons.remove,
+      name: "Iconos",
+      route: "Iconos",
+      screen: IconosScreen(),
+    ),
   ];
 
   static Map<String, Widget Function(BuildContext)> getAppRoutes() {

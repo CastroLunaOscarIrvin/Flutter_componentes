@@ -20,7 +20,7 @@ class _ButtonScreenState extends State<ButtonScreen> {
               Tab(text: "Codigo", icon: Icon(Icons.code)),
             ],
           ),
-          title: Text('Flutter TabBar'),
+          title: Text('Flutter Buttons'),
         ),
         body: TabBarView(
           children: <Widget>[
