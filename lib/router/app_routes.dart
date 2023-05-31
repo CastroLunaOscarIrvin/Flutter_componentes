@@ -62,6 +62,18 @@ class AppRoutes {
       route: "Iconos",
       screen: IconosScreen(),
     ),
+    MenuOption(
+      icon: Icons.remove,
+      name: "Progressive Linear Bar",
+      route: "Progressive Linear Bar",
+      screen: LinearProgressScreen(),
+    ),
+    MenuOption(
+      icon: Icons.remove,
+      name: "Slider",
+      route: "Slider",
+      screen: SliderScreen(),
+    ),
   ];
 
   static Map<String, Widget Function(BuildContext)> getAppRoutes() {
