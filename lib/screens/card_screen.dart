@@ -8,8 +8,6 @@ class CardScreen extends StatefulWidget {
 
 class _CardScreenState extends State<CardScreen> {
   @override
-  int _value = 1;
-
   Widget build(BuildContext context) {
     return DefaultTabController(
       length: 2,
