@@ -8,3 +8,7 @@ export 'package:fluttercomponentes/screens/alertdialog_screen.dart';
 export 'package:fluttercomponentes/screens/card_screen.dart';
 export 'package:fluttercomponentes/screens/gridview_screen.dart';
 export 'package:fluttercomponentes/screens/iconos_screen.dart';
+export 'package:fluttercomponentes/screens/linearprogressbar_screen.dart';
+export 'package:fluttercomponentes/screens/slider_screen.dart';
+export 'package:fluttercomponentes/screens/checkbox_screen.dart';
+export 'package:fluttercomponentes/screens/radiobutton_screen.dart';

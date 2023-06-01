@@ -25,12 +25,8 @@ class _LinearProgressScreenState extends State<LinearProgressScreen> {
           children: <Widget>[
             ListView(
               physics: const AlwaysScrollableScrollPhysics(),
-              padding: const EdgeInsets.all(10),
+              padding: const EdgeInsets.all(20),
               children: <Widget>[
-                Container(
-                    margin: const EdgeInsets.all(10),
-                    color: Colors.pink,
-                    child: LinearProgressIndicator()),
                 Container(
                     margin: const EdgeInsets.all(10),
                     color: Colors.pink,
@@ -54,6 +50,13 @@ class _LinearProgressScreenState extends State<LinearProgressScreen> {
                           new AlwaysStoppedAnimation<Color>(AppTheme.primary),
                       backgroundColor: Colors.grey,
                     )),
+                Container(
+                    margin: const EdgeInsets.all(10),
+                    color: Colors.pink,
+                    child: LinearProgressIndicator(
+                        value: 0.7,
+                        backgroundColor: Colors.grey,
+                        color: Colors.purple)),
                 Container(
                     margin: const EdgeInsets.all(10),
                     color: Colors.pink,
@@ -69,7 +72,7 @@ class _LinearProgressScreenState extends State<LinearProgressScreen> {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Image.asset('assets/LinearProgress.jpeg'),
+                  Image.asset('assets/linearprogress.jpeg'),
                   Text("Codigo"),
                 ],
               ),
