@@ -33,7 +33,7 @@ class _CheckboxScreenState extends State<CheckboxScreen> {
               children: <Widget>[
                 Container(
                   margin: const EdgeInsets.all(10),
-                  color: Color(0xffa2a7a9),
+                  color: Color(0xff686969),
                   child: Checkbox(
                     value: _value,
                     onChanged: (bool? value) {
@@ -45,7 +45,7 @@ class _CheckboxScreenState extends State<CheckboxScreen> {
                 ),
                 Container(
                   margin: const EdgeInsets.all(10),
-                  color: Color(0xffa2a7a9),
+                  color: Color(0xff686969),
                   child: Checkbox(
                     value: _value2,
                     onChanged: (bool? value) {
@@ -53,12 +53,12 @@ class _CheckboxScreenState extends State<CheckboxScreen> {
                         _value2 = value!;
                       });
                     },
-                    activeColor: Colors.green,
+                    activeColor: AppTheme.primary,
                   ),
                 ),
                 Container(
                   margin: const EdgeInsets.all(10),
-                  color: Color(0xffa2a7a9),
+                  color: Color(0xff686969),
                   child: Checkbox(
                     value: _value3,
                     onChanged: (bool? value) {
@@ -66,8 +66,8 @@ class _CheckboxScreenState extends State<CheckboxScreen> {
                         _value3 = value!;
                       });
                     },
-                    activeColor: Colors.green,
-                    checkColor: Colors.red,
+                    activeColor: Colors.red,
+                    checkColor: AppTheme.primary,
                   ),
                 ),
               ],

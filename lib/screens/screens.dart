@@ -12,3 +12,5 @@ export 'package:fluttercomponentes/screens/linearprogressbar_screen.dart';
 export 'package:fluttercomponentes/screens/slider_screen.dart';
 export 'package:fluttercomponentes/screens/checkbox_screen.dart';
 export 'package:fluttercomponentes/screens/radiobutton_screen.dart';
+export 'package:fluttercomponentes/screens/switch_screen.dart';
+export 'package:fluttercomponentes/screens/textbutton_screen.dart';

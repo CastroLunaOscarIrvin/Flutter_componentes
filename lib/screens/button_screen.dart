@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fluttercomponentes/theme/app_theme.dart';
 
 class ButtonScreen extends StatefulWidget {
   const ButtonScreen({super.key});
@@ -30,7 +31,7 @@ class _ButtonScreenState extends State<ButtonScreen> {
               children: <Widget>[
                 Container(
                   margin: const EdgeInsets.all(10),
-                  color: Color(0xffa2a7a9),
+                  color: AppTheme.primary,
                   child: TextButton(
                     child: Text("Boton Texto"),
                     onPressed: () {},
@@ -38,7 +39,7 @@ class _ButtonScreenState extends State<ButtonScreen> {
                 ),
                 Container(
                   margin: const EdgeInsets.all(10),
-                  color: Color(0xffa2a7a9),
+                  color: AppTheme.primary,
                   child: ElevatedButton(
                     child: Text("Button"),
                     onPressed: () {},
@@ -46,7 +47,7 @@ class _ButtonScreenState extends State<ButtonScreen> {
                 ),
                 Container(
                   margin: const EdgeInsets.all(10),
-                  color: Color(0xffa2a7a9),
+                  color: AppTheme.primary,
                   child: OutlinedButton(
                     child: Text("Button"),
                     onPressed: () {},
@@ -54,7 +55,7 @@ class _ButtonScreenState extends State<ButtonScreen> {
                 ),
                 Container(
                   margin: const EdgeInsets.all(10),
-                  color: Color(0xffa2a7a9),
+                  color: AppTheme.primary,
                   child: FloatingActionButton(
                     child: Icon(Icons.save),
                     backgroundColor: Colors.deepPurple,
@@ -66,7 +67,7 @@ class _ButtonScreenState extends State<ButtonScreen> {
                 ),
                 Container(
                   margin: const EdgeInsets.all(10),
-                  color: Color(0xffa2a7a9),
+                  color: AppTheme.primary,
                   child: IconButton(
                     icon: Icon(Icons.play_arrow),
                     onPressed: () {},
@@ -74,7 +75,7 @@ class _ButtonScreenState extends State<ButtonScreen> {
                 ),
                 Container(
                   margin: const EdgeInsets.all(10),
-                  color: Color(0xffa2a7a9),
+                  color: AppTheme.primary,
                   child: DropdownButton(
                       value: _value,
                       items: [
@@ -96,7 +97,7 @@ class _ButtonScreenState extends State<ButtonScreen> {
                 ),
                 Container(
                   margin: const EdgeInsets.all(10),
-                  color: Color(0xffa2a7a9),
+                  color: AppTheme.primary,
                   child: PopupMenuButton(
                       itemBuilder: (context) => [
                             PopupMenuItem(
@@ -111,7 +112,7 @@ class _ButtonScreenState extends State<ButtonScreen> {
                 ),
                 Container(
                   margin: const EdgeInsets.all(10),
-                  color: Color(0xffa2a7a9),
+                  color: AppTheme.primary,
                   child: ButtonBar(
                     children: [
                       TextButton(

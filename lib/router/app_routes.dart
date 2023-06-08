@@ -3,6 +3,7 @@ import 'dart:html';
 import 'package:flutter/material.dart';
 import 'package:fluttercomponentes/models/models.dart';
 import 'package:fluttercomponentes/screens/screens.dart';
+import 'package:fluttercomponentes/screens/switch_screen.dart';
 
 class AppRoutes {
   static const initialRoute = "home";
@@ -85,6 +86,18 @@ class AppRoutes {
       name: "Radio",
       route: "Radio",
       screen: RadioScreen(),
+    ),
+    MenuOption(
+      icon: Icons.remove,
+      name: "Switch",
+      route: "Switch",
+      screen: SwitchScreen(),
+    ),
+    MenuOption(
+      icon: Icons.remove,
+      name: "TextButton",
+      route: "TextButton",
+      screen: TextButtonScreen(),
     ),
   ];
 
